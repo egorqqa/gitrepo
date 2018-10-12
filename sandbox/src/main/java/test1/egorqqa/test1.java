@@ -6,11 +6,17 @@ public class test1 {
     hello("world");
       hello("user");
       hello("Admin");
-double a = 4;
-double b = 6;
+
+      Square s = new Square(5);
+      s.l = 5;
+      Rectable r = new Rectable(4, 6);
+      r.a = 4;
+      r.b = 6;
       System.out.println((" +area(a, b)"));
-      double len = 5;
-      System.out.println("Площадь квадрата со стороной " + len +" = " + len*len);
+      double l = 5;
+      System.out.println("Площадь квадрата со стороной " + s.l +" = " + s.area());
+      System.out.println("Площадь прямоугольника со стороной = " + r.area());
+
   }
   public static void hello(String somebody) {
 
@@ -18,9 +24,10 @@ double b = 6;
       System.out.println("Hi2all!" + somebody);
   }
 
-  public static double area(double a, double b) {
-      return a*b;
-  }
+
+
+
+
 }
 
 
